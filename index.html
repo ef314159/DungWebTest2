@@ -18,19 +18,16 @@
                 evt.preventDefault();
                 evt.stopPropagation();
                 evt.target.style.cursor = 'default';
+                return false;
               }
  
               function handleMouseUp(evt) {
                 evt.preventDefault();
                 evt.stopPropagation();
                 evt.target.style.cursor = '';
+                return false;
               }
               document.getElementById('embed-html').addEventListener('mousedown', handleMouseDown, false);
               document.getElementById('embed-html').addEventListener('mouseup', handleMouseUp, false);
-              
-              canvas.oncontextmenu=function(e){
-                e.preventDefault();
-                return false;
-              }
        </script>
 </html>
