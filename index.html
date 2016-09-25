@@ -29,5 +29,10 @@
               }
               document.getElementById('embed-html').addEventListener('mousedown', handleMouseDown, false);
               document.getElementById('embed-html').addEventListener('mouseup', handleMouseUp, false);
+
+              function oncontextmenu(e) {
+                e.preventDefault();
+                return false;
+              }
        </script>
 </html>
