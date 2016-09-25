@@ -8,7 +8,7 @@ i:data/rock_n.png:1536:image/png
 t:data/text.fnt:11134:application/unknown
 i:data/text_0.png:13590:image/png
 t:data/title.fnt:3176:application/unknown
-i:data/title_0.png:52275:image/png
+i:data/title_0.png:37040:image/png
 t:com/badlogic/gdx/graphics/g3d/particles/particles.fragment.glsl:770:application/unknown
 t:com/badlogic/gdx/graphics/g3d/particles/particles.vertex.glsl:2886:application/unknown
 t:com/badlogic/gdx/graphics/g3d/shaders/default.fragment.glsl:5163:application/unknown

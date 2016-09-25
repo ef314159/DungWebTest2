@@ -9,7 +9,7 @@
        </head>
 
        <body>
-              <div align="center" id="embed-html"></div>
+              <div align="center" id="embed-html" oncontextmenu="return false;"></div>
               <script type="text/javascript" src="html/html.nocache.js"></script>
        </body>
 
@@ -18,22 +18,15 @@
                 evt.preventDefault();
                 evt.stopPropagation();
                 evt.target.style.cursor = 'default';
-                return false;
               }
  
               function handleMouseUp(evt) {
                 evt.preventDefault();
                 evt.stopPropagation();
                 evt.target.style.cursor = '';
-                return false;
               }
 
               document.getElementById('embed-html').addEventListener('mousedown', handleMouseDown, false);
               document.getElementById('embed-html').addEventListener('mouseup', handleMouseUp, false);
-              document.getElementsByTagName('canvas')[0].oncontextmenu=function(){
-                return false;
-              }
-
-              console.log(document.getElementsByTagName("canvas"));
        </script>
 </html>
