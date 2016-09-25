@@ -9,7 +9,7 @@
        </head>
 
        <body>
-              <div align="center" id="embed-html" oncontextmenu="return false;"></div>
+              <div align="center" id="embed-html"></div>
               <script type="text/javascript" src="html/html.nocache.js"></script>
        </body>
 
@@ -30,8 +30,7 @@
 
               document.getElementById('embed-html').addEventListener('mousedown', handleMouseDown, false);
               document.getElementById('embed-html').addEventListener('mouseup', handleMouseUp, false);
-
-              canvas.oncontextmenu=function(e){
+              document.getElementsByTagName("canvas")[0].oncontextmenu=function(e){
                 e.preventDefault();
                 return false;
               }
